@@ -1,0 +1,44 @@
+composer require laravel/jetstream
+php artisan jetstream:install livewire
+
+php artisan livewire:publish --config
+php artisan livewire:publish --assets
+
+,
+"@php artisan vendor:publish --force --tag=livewire:assets --ansi"
+
+npm install
+npm run dev
+php artisan migrate
+
+php artisan vendor:publish --tag=jetstream-views
+npm run dev
+
+# Compile your CSS / JavaScript for production...
+npm run prod
+
+# Compile your CSS / JavaScript for development and recompile on change...
+npm run watch
+
+
+
+php artisan storage:link
+
+
+
+
+//////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+dddddddddddddddddddddddddddddddddddddd
